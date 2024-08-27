@@ -5,10 +5,10 @@ var typed = new Typed(".text", {
     backDelay: 1000,
     loop: true
 })
-var typed = new Typed(".universe-text", {
+/* var typed = new Typed(".universe-text", {
     strings: ["Universe" , ],
     typeSpeed: 70,
     backSpeed: 50,
     backDelay: 1000,
     loop: true
-})
+}) */
