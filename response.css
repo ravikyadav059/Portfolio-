@@ -79,9 +79,10 @@
 
     .home {
         display: flex;
-        /*  background-color: red; */
+         background-color: red;
         width: auto;
         padding: 1rem;
+        margin-bottom: 10rem;
     }
 
     .home-content h1 {
@@ -100,7 +101,7 @@
         justify-content: center;
         flex-direction: column;
         background-color: #EAD2CA;
-        margin-top: 4rem;
+        margin-top: 6rem;
     }
 
     .about-text h2{
