@@ -163,6 +163,14 @@ a:hover {
         padding: 10px;
     }
 
+    .goto_portfolio_website a {
+        position: absolute;
+        left: 1rem; /* Aligns to the left side of the page */
+        top: -1.1rem; /* Adjust this value to position vertically (e.g., top 20px from the top of the page) */
+        border-radius: 5px; /* Optional: Rounded corners */
+        font-size: 0.6rem;
+        width: 6rem;
+    }
 
 
     #header1 {
