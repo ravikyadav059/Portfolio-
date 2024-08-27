@@ -14,7 +14,7 @@
 }
 
 /* Responsive styles */
-@media (max-width: 768px) {
+@media /* (max-width: 768px)  */ (max-width: 1028px)  {
     .navbar {
         display: none;
         flex-direction: column;
@@ -57,10 +57,15 @@
 
 
 /* start for moble rep  1250 */
+
+
 @media
 
 /* (min-width: 480px) and */
-(max-width: 1049px) {
+/* (max-width: 768px) */
+
+
+/* (max-width: 1049px) */ (max-width: 768px)  {
     body {
         font-size: 18px;
         /* Slightly larger font size for tablets */
@@ -76,6 +81,16 @@
         display: flex;
         /*  background-color: red; */
         width: auto;
+        padding: 1rem;
+    }
+
+    .home-content h1 {
+        font-size: 38px;
+        font-weight: 700;
+        opacity: 0;
+        animation: slideRight 1s ease forwards;
+        animation-delay: 1s;
+        /* background-color: skyblue; */
     }
 
     .about {
@@ -85,35 +100,89 @@
         justify-content: center;
         flex-direction: column;
         background-color: #EAD2CA;
-
+        margin-top: 2rem;
     }
 
-    .container1 {
-        /* background-color: red; */
+    .about-text h2{
+        font-size: 3rem;
+        /* background-color: yellow; */
+        text-align: center;
+    }
+
+    .about-img img {
+        padding-bottom: 10%;
+        max-width: 300px;
+        height: auto;
+        width: auto;
+        border-radius: 8px;
+        /*  background-color: black; */
+    }
+
+    .about-text p {
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 4rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        /* Balance the margin on the left and right */
+        /* background-color: yellow; */
+        text-align: center;
+        text-align: justify;
+    }
+
+    .sub-title{
+        font-size: 3rem;
+        height: 5rem;
+    }
+    .container1{
         display: flex;
         flex-direction: column;
         padding: 0;
         margin: 0;
-        width: auto;
+        width: 600px;
+        height: 500px;
+        /* padding: 75px 90px; */
+       /*  margin-left: 120px; */
+       /* margin-bottom: 2rem; */
+        /* background-color: #04041a; */
+        background-color: #FFFAF5;
+        color: #000;
     }
-
     .Technical-bars {
         margin: 0 2rem 2rem;
     }
 
-    .con {
-        /* background-color: grey; */
-        /*  display: flex;
-        flex-direction: column; */
-        padding: 0 0 0 1.5rem;
-        margin: 2rem 0 0 0;
-        width: auto;
+    .for_responsive{
+        margin-top: 3rem;
+    }
 
+    .main-text{
+        margin-top: 50px;
+    }
+    .main-text h2{
+        font-size: 3rem;
+        line-height: 1;
+        text-align: center;
     }
 
     .contact {
         display: flex;
+        width: auto;
+        align-items: center;
+        justify-content: center;
         flex-direction: column;
+       /*  background-color: red; */
+        margin-top: 2rem;
+
+    }
+
+    .contact-text h2 {
+        font-size: 3rem;
+        /* background-color: yellow; */
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: block;
     }
 
     .portfolio-content {
@@ -171,4 +240,32 @@
     .orbit-container {
         display: none;
     }
+}
+
+
+
+@media (min-width: 768px) and (max-width :833px) {
+.orbit-container , #home-image  {
+        display: none;
+    }
+
+    .home {
+        width: 100%;
+        /* background-color: #fc6d42; */
+    }
+    .home-content {
+        width: 100%;
+    }
+}
+
+@media (min-width: 833px) and (max-width :1249px) {
+    /* .orbit-container , #home-image  {
+        display: none;
+    } */
+
+
+    .home-content {
+        width: 40%;
+    }
+    
 }

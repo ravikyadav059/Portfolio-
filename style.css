@@ -237,7 +237,7 @@ section{
     height: 500px;
     padding: 75px 90px;
     margin-left: 120px;
-    background-color: #04041a;
+    /* background-color: #04041a; */
     background-color: #FFFAF5;
     color: #000;
 }
