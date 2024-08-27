@@ -1,0 +1,145 @@
+/* Hamburger styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.hamburger span i {
+    width: 30px;
+    height: 4px;
+    color: #fff;
+    border-radius: 3px;
+    transition: transform 0.3s ease;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #051129;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hamburger div:nth-child(1) {
+        transform: translateY(6px);
+    }
+
+    .hamburger div:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger div:nth-child(3) {
+        transform: translateY(-6px);
+    }
+
+    .hamburger div:nth-child(4) {
+        transform: translateY(-12px);
+        /* Adjust if needed */
+    }
+}
+
+/* hambrger respnisve over */
+
+
+/* start for moble rep  1250 */
+@media
+/* (min-width: 480px) and */
+(max-width: 1049px) {
+    body {
+        font-size: 18px;
+        /* Slightly larger font size for tablets */
+        padding: 30px;
+        /* More padding for better spacing on larger screens */
+    }
+
+    .header {
+        justify-content: space-between;
+    }
+
+    .home {
+        display: flex;
+        background-color: red;
+        width: auto;
+    }
+
+    .about {
+        display: flex;
+        width: auto;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .container1 {
+        /* background-color: red; */
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        width: auto;
+    }
+
+    .Technical-bars {
+        margin: 0 2rem 2rem;
+
+    }
+
+    .con {
+        background-color: grey;
+        /*  display: flex;
+        flex-direction: column; */
+        padding: 0 0 0 1.5rem;
+        margin: 2rem 0 0 0;
+        width: auto;
+
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portfolio-content {
+        background-color: aqua;
+        justify-content: center;
+    }
+
+    .portfolio-content .row,
+    .row img {
+        height: 15rem;
+        width: 15rem;
+    }
+
+    .layer {
+
+        height: 15rem;
+        width: 15rem;
+    }
+
+    .about-text .btn {
+        margin-bottom: 2rem;
+    }
+
+    /* Hidding the contact form */
+
+    .orbit-container {
+        display: none;
+    }
+}
