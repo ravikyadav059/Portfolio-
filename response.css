@@ -9,7 +9,6 @@
 .hamburger span i {
     width: 30px;
     height: 4px;
-    color: #fff;
     border-radius: 3px;
     transition: transform 0.3s ease;
 }
@@ -23,7 +22,7 @@
         position: absolute;
         top: 70px;
         left: 0;
-        background: #051129;
+        background: #FFFAF5;
         padding: 20px;
         gap: 15px;
     }
