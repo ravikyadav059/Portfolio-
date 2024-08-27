@@ -74,7 +74,7 @@
 
     .home {
         display: flex;
-        background-color: red;
+       /*  background-color: red; */
         width: auto;
     }
 
@@ -102,7 +102,7 @@
     }
 
     .con {
-        background-color: grey;
+        /* background-color: grey; */
         /*  display: flex;
         flex-direction: column; */
         padding: 0 0 0 1.5rem;
