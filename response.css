@@ -79,10 +79,10 @@
 
     .home {
         display: flex;
-         background-color: red;
+        /*  background-color: red; */
         width: auto;
         padding: 1rem;
-        margin-bottom: 10rem;
+        margin-bottom: 15rem;
     }
 
     .home-content h1 {
