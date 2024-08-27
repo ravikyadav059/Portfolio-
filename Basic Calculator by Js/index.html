@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="theme-toggle">
+        <button id="toggle-theme">
+            <span class="icon sun"></span>
+            <span class="icon moon"></span>
+        </button>
+    </div>
+
+    <div class="backtoPortfolio">
+        <a href="../index.html">
+            <button>BACK TO PORTFOLIO</button>
+        </a>
+    </div>
+
+    <div class="calculator-container">
+        <!-- Heading -->
+        <h1 class="calculator-heading">Simple Calculator</h1>
+
+        <div class="calculator">
+            <div class="calculator-screen" id="calculator-screen">
+                <span id="screen-text"></span>
+            </div>
+            <div class="calculator-buttons">
+                <button class="btn" data-value="7">7</button>
+                <button class="btn" data-value="8">8</button>
+                <button class="btn" data-value="9">9</button>
+                <button class="btn operator" data-value="/">÷</button>
+
+                <button class="btn" data-value="4">4</button>
+                <button class="btn" data-value="5">5</button>
+                <button class="btn" data-value="6">6</button>
+                <button class="btn operator" data-value="*">×</button>
+
+                <button class="btn" data-value="1">1</button>
+                <button class="btn" data-value="2">2</button>
+                <button class="btn" data-value="3">3</button>
+                <button class="btn operator" data-value="-">−</button>
+
+                <button class="btn" data-value="0">0</button>
+                <button class="btn" data-value=".">.</button>
+                <button class="btn operator" data-value="=">=</button>
+                <button class="btn operator" data-value="+">+</button>
+
+                <button class="btn clear" data-value="clear">C</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- text symbols animation -->
+ <!--    <div class="symbol-container">
+        <div class="symbol">+</div>
+        <div class="symbol">-</div>
+        <div class="symbol">/</div>
+        <div class="symbol">*</div>
+    </div> -->
+
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

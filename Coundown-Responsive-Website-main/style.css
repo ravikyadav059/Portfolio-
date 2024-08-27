@@ -1,0 +1,379 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color: #2e8dc6;
+    padding: 20px;
+}
+
+.goto_portfolio_website a {
+    position: absolute;
+    left: 2rem; /* Aligns to the left side of the page */
+    top: 0px; /* Adjust this value to position vertically (e.g., top 20px from the top of the page) */
+    border-radius: 5px; /* Optional: Rounded corners */
+    font-size: 0.6rem;
+    width: 6rem;
+}
+
+
+
+#firstheader {
+    color: white;
+    font-size: 1.2rem;
+}
+
+#header1 {
+    font-size: 5rem;
+    font-weight: bolder;
+    padding-bottom: 2rem;
+    color: white;
+    text-align: center;
+}
+
+#clockHeader {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 9rem;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+}
+
+#timer {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #d774f6;
+    column-gap: 20px;
+}
+
+#colon,
+#colonone,
+#colontwo,
+#colonthird,
+#colonfourth {
+    font-size: 5rem;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#days,
+#hours,
+#minutes,
+#seconds {
+    height: 7rem;
+    width: 7rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    font-weight: bold;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+
+
+#img {
+    background-color: white;
+    width: 16rem;
+    height: 16rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: rotateInfinite;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotateInfinite {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    background-color: yellow;
+}
+
+#clock {
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 1rem;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    color: #d774f6;
+    text-decoration: none;
+    border-radius: 15px;
+    width: 12rem;
+    transition: background-color 0.2s;
+    text-align: center;
+}
+
+a:hover {
+    background-color: #d774f6;
+    color: white;
+}
+
+#colon1 {
+    display: none;
+}
+
+/* Responsive styles */
+/* Mobile devices (max-width: 480px) */
+@media only screen and (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+
+
+    #header1 {
+        font-size: 2rem;
+    }
+
+    #timer {
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #colon {
+        display: none;
+    }
+
+    #days,
+    #hours,
+    #minutes,
+    #seconds {
+        height: 3.5rem;
+        width: 3.5rem;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        font-weight: bold;
+        border-radius: 1rem;
+        text-align: center;
+    }
+
+    #colonone::after {
+        content: 'Days';
+        color: white;
+        font-size: 1rem;
+    }
+
+    #colontwo:after {
+        content: 'Hours';
+        color: white;
+        font-size: 1rem;
+    }
+
+    #colonthird::after {
+        content: 'Minutes';
+        color: white;
+        font-size: 1rem;
+    }
+
+    #colonfourth::after {
+        content: 'Seconds';
+        color: white;
+        font-size: 1rem;
+    }
+
+
+    #clockHeader {
+        display: none;
+        
+
+    }
+
+
+    #img {
+        background-color: white;
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-name: rotateInfinite;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    img {
+        width: 6rem;
+        height: 6rem;
+    }
+    
+
+    #clock {
+        font-size: 1rem;
+    }
+
+    a {
+        padding: 0.3rem 0.7rem;
+        font-size: 1rem;
+    }
+}
+
+/* Tablet devices (min-width: 481px and max-width: 768px) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    #header1 {
+        font-size: 4rem;
+    }
+
+    #timer {
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #colon {
+        display: none;
+    }
+
+    #days,
+    #hours,
+    #minutes,
+    #seconds {
+        height: 3.5rem;
+        width: 3.5rem;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        font-weight: bold;
+        border-radius: 1rem;
+        text-align: center;
+    }
+
+    #colonone::after {
+        content: 'Days';
+        color: white;
+        font-size: 1rem;
+    }
+
+    #colontwo:after {
+        content: 'Hours';
+        color: white;
+        font-size: 1rem;
+    }
+
+    #colonthird::after {
+        content: 'Minutes';
+        color: white;
+        font-size: 1rem;
+    }
+
+    #colonfourth::after {
+        content: 'Seconds';
+        color: white;
+        font-size: 1rem;
+    }
+
+    #clockHeader {
+        display: none;
+    }
+
+
+    #img {
+        background-color: white;
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-name: rotateInfinite;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    img {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    #clock {
+        font-size: 1.1rem;
+    }
+
+    a {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+}
+
+/* Desktop devices (min-width: 769px) */
+@media only screen and (min-width: 769px) {
+    body {
+        padding: 30px;
+    }
+
+    #header1 {
+        font-size: 5rem;
+    }
+
+    #timer {
+        font-size: 3rem;
+    }
+
+    #clock {
+        font-size: 1.2rem;
+    }
+
+    a {
+        padding: 0.7rem 1.2rem;
+    }
+}

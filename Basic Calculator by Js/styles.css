@@ -1,0 +1,321 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.3s ease;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0; /* Ensure no margin around body */
+}
+
+/* Styles for the BACK TO PORTFOLIO button */
+.backtoPortfolio {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+.backtoPortfolio button {
+    background-color: #1c1f23; /* Button background color */
+    color: #ffffff; /* Button text color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 5px 5px 10px #1c1f23, -5px -5px 10px #2e3136; /* 3D shadow */
+}
+
+.backtoPortfolio button:hover {
+    background-color: #2e3136; /* Slightly darker on hover */
+    box-shadow: 3px 3px 6px #1c1f23, -3px -3px 6px #2e3136; /* Softer shadow on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.backtoPortfolio button:active {
+    background-color: #1c1f23; /* Darken the background on click */
+    box-shadow: inset 5px 5px 10px #1c1f23, inset -5px -5px 10px #2e3136; /* Inset shadow for pressed effect */
+    transform: scale(0.95); /* Slightly shrink on click */
+}
+
+
+/* Container for the entire calculator including heading */
+.calculator-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    width: 100%;
+    max-width: 400px; /* Adjust as needed */
+    margin: auto; /* Center horizontally within the page */
+    height: 80vh; /* Adjust height to center vertically */
+}
+
+/* Heading Style */
+.calculator-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    animation: colorWave 3s linear infinite;
+    display: inline-block; /* For hover effect */
+    transition: transform 0.3s ease; /* Smooth scaling on hover */
+    font-family: 'Roboto Slab', serif; /* Apply Roboto Slab font */
+}
+
+/* Hover Animation */
+.calculator-heading:hover {
+    transform: scale(1.1); /* Slightly increase the size on hover */
+}
+
+/* Color Wave Animation */
+@keyframes colorWave {
+    0%, 100% { 
+        background-image: linear-gradient(90deg, #ff7675, #74b9ff, #55efc4, #ffeaa7, #6c429f, #ff7675);
+        background-size: 200% 100%;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+    50% { 
+        background-position: 100% 0;
+    }
+}
+
+/* Optional - Make the text appear only with the gradient */
+.calculator-heading {
+    background-image: linear-gradient(90deg, #ff7675, #74b9ff, #55efc4, #ffeaa7, #6c429f, #ff7675);
+    background-size: 200% 100%;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.calculator {
+    background-color: var(--calculator-bg);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+.calculator-screen {
+    width: 100%;
+    height: 80px;
+    background-color: var(--screen-bg);
+    border-radius: 10px;
+    text-align: right;
+    padding: 20px;
+    font-size: 2rem;
+    color: var(--text-color);
+    overflow: hidden;
+}
+
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    padding: 20px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: var(--button-hover-bg);
+    transform: scale(1.1);
+}
+
+.btn:active {
+    background-color: var(--button-active-bg);
+    transform: scale(0.95);
+}
+
+.operator {
+    background-color: var(--operator-bg);
+    color: var(--operator-text);
+}
+
+.operator:hover {
+    background-color: var(--operator-hover-bg);
+}
+
+.clear {
+    grid-column: span 4;
+    background-color: var(--clear-bg);
+    color: var(--clear-text);
+}
+
+.clear:hover {
+    background-color: var(--clear-hover-bg);
+}
+
+#screen-text {
+    display: block;
+    white-space: nowrap;
+}
+
+/* Theme Variables */
+:root {
+    --bg-color: #2d3436;
+    --text-color: #2d3436;
+    --calculator-bg: #1e272e;
+    --screen-bg: #dfe6e9;
+    --button-bg: #636e72;
+    --button-text: #ffffff;
+    --button-hover-bg: #b2bec3;
+    --button-active-bg: #d63031;
+    --operator-bg: #fdcb6e;
+    --operator-text: #2d3436;
+    --operator-hover-bg: #fab1a0;
+    --clear-bg: #d63031;
+    --clear-text: #ffffff;
+    --clear-hover-bg: #e17055;
+}
+
+body.light-mode {
+    --bg-color: #f1f2f6;
+    --text-color: #2d3436;
+    --calculator-bg: #ffffff;
+    --screen-bg: #ecf0f1;
+    --button-bg: #bdc3c7;
+    --button-text: #2d3436;
+    --button-hover-bg: #95a5a6;
+    --button-active-bg: #e74c3c;
+    --operator-bg: #f39c12;
+    --operator-text: #ffffff;
+    --operator-hover-bg: #f1c40f;
+    --clear-bg: #e74c3c;
+    --clear-text: #ffffff;
+    --clear-hover-bg: #c0392b;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#toggle-theme {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--button-bg);
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+#toggle-theme:hover {
+    background-color: var(--button-hover-bg);
+}
+
+.icon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.sun {
+    background: url('images/sun.png') no-repeat center center;
+    background-size: cover;
+    opacity: 1;
+    transform: rotate(0deg);
+}
+
+.moon {
+    background: url('images/moon.png') no-repeat center center;
+    background-size: cover;
+    opacity: 0;
+    transform: rotate(-180deg);
+}
+
+body.light-mode .sun {
+    opacity: 0;
+    transform: rotate(180deg);
+}
+
+body.light-mode .moon {
+    opacity: 1;
+    transform: rotate(0deg);
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+    .calculator {
+        padding: 15px;
+    }
+    
+    .btn {
+        padding: 15px;
+        font-size: 1.2rem;
+    }
+}
+
+/* symbolanimation */
+/* Container to hold the symbols */
+.symbols-container {
+    position: fixed;
+    top: 50%; /* Vertically center the container */
+    left: 100%; /* Start from the right edge of the screen */
+    transform: translateY(-50%); /* Ensure the container is perfectly centered */
+    white-space: nowrap; /* Prevent symbols from wrapping to the next line */
+    z-index: 9999; /* Higher z-index to ensure visibility */
+    overflow: hidden; /* Ensure symbols don't overflow the container */
+    width: 100;
+}
+
+/* Styling and animation for each symbol */
+.symbol {
+    display: inline-block;
+    font-size: 3rem; /* Adjust size as needed */
+    margin-right: 20px; /* Space between symbols */
+    animation: moveLeft 10s linear infinite, rotateSymbol 2s linear infinite;
+    color: #000; /* Ensure symbols are visible */
+}
+
+/* Move symbols from right to left across the entire webpage */
+@keyframes moveLeft {
+    0% {
+        transform: translateX(100vw); /* Start from right edge of viewport */
+    }
+    100% {
+        transform: translateX(-100vw); /* Move to the left edge of viewport */
+    }
+}
+
+/* Rotate each symbol */
+@keyframes rotateSymbol {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
