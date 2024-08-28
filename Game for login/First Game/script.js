@@ -26,7 +26,7 @@ document.getElementById('signup-form').addEventListener('submit', function(event
     localStorage.setItem('signupEmail', email);
     localStorage.setItem('signupPassword', password);
 
-    alert('Sign-up data saved to local storage');
+   /*  alert('Sign-up data saved to local storage'); */
 });
 
 // Validate login data
