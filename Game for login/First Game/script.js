@@ -25,7 +25,7 @@ document.getElementById('signup-form').addEventListener('submit', function(event
     localStorage.setItem('signupUsername', username);
     localStorage.setItem('signupEmail', email);
     localStorage.setItem('signupPassword', password);
-
+    alert('You Have Sign Up Succefully. Now Login');
    /*  alert('Sign-up data saved to local storage'); */
 });
 
