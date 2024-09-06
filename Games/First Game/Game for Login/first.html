@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Note Section -->
+        <div class="note">
+            <p>*Note :- This is a game page for login and sign-up. If you enter the wrong username or password, the
+                login button
+                will move, and you won’t be able to click it. You won’t be able to log in unless you enter the correct
+                details. Don't Try to log in correctly! To Enjoy this Game.</p>
+
+        </div>
+
+        <div class="details">
+            <label for="">UserName<li class="signup1"></li></label>
+            <label for="">Pasword<li class="signup3"></li></label>
+        </div>
+
+        <div class="form-container">
+            <div class="toggle-buttons">
+                <button id="login-btn" class="active">Login</button>
+                <button id="signup-btn">Sign Up</button>
+            </div>
+
+            <form id="login-form" class="form active">
+                <h2>Login</h2>
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+
+            <form id="signup-form" class="form">
+                <h2>Sign Up</h2>
+                <input type="text" placeholder="Username" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+
+      
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>
