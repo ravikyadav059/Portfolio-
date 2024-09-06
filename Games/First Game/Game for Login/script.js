@@ -35,7 +35,7 @@ document.getElementById('signup-form').addEventListener('submit', function (even
     /* document.querySelector('.signup2').innerHTML = signe; */
     document.querySelector('.signup3').innerHTML = signp;
 
-   /*  alert('Sign-up data saved to local storage'); */
+    alert('Sign-up Succesfull Now Try To Login');
 });
 
 // Validate login data
