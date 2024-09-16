@@ -192,8 +192,10 @@ body{
 .sub-title{
     text-align: center;
     font-size: 60px;
-    padding-bottom: 70px;
+    /* padding-bottom: 70px; */
+    height: 7rem;
     background-color: #04041a;
+    align-content: center;
     color: #fff;
 }
 .sub-title span{
