@@ -234,11 +234,12 @@ section{
 }
 .container1{
     width: 600px;
-    height: 500px;
+    height: 600px;
     padding: 75px 90px;
-    margin-left: 120px;
-    /* background-color: #04041a; */
-    background-color: #FFFAF5;
+   /*  margin-left: 90px; */
+    margin: auto;
+   /*  background-color: red; */
+    background-color: #FFFAF5;  
     color: #000;
 }
 .heading1{
@@ -300,9 +301,9 @@ section{
 .progress-line.html span{
     width: 90%;
 }
-.progress-line.css span{
+/* .progress-line.css span{
     width: 85%;
-}
+} */
 .progress-line.javascript span{
     width: 75%;
 }
@@ -327,9 +328,9 @@ section{
 .progress-line.html span::after{
     content: "90%";
 }
-.progress-line.css span::after{
+/* .progress-line.css span::after{
     content: "85%";
-}
+} */
 .progress-line.javascript span::after{
     content: "75%";
 }
